@@ -48,13 +48,11 @@ if __name__ == "__main__":
     # 1. IMPORTING TRAINING DATA
     PATH = '/datasets/'
     TRAINPATH = None
-    if config.dataset == 'noisex':
+    if config.dataset == '':
         if config.norm:
             TRAINPATH = os.path.join(PATH, '') 
         else:
             TRAINPATH = os.path.join(PATH, '')
-    elif config.dataset == 'sound':
-        TRAINPATH = os.path.join(PATH, '')
     else:
         raise ValueError('wrong dataset select')
     
